@@ -1,12 +1,12 @@
 # Basic
-title: 潘柏信
-subtitle: 个人站
-description: 欢迎来到我的个人站~
+title: 大头不撑伞
+subtitle: 大头大头 下雨不愁
+description: 欢迎进来淋雨~
 # 头像里面的标题
 avatarTitle: leopardpan
 # 头像里面的描述
-avatarDesc: iOS / 机器学习
-url: "http://baixin.io"
+avatarDesc: ARM / 嵌入式开发
+url: "http://datouor.io"
 
 # Comment
 comment:
@@ -15,15 +15,15 @@ comment:
 
 # Social
 social:
-    weibo: 5366874726 
-    github: leopardpan
+    weibo:  
+    github: datouor
     # twitter: 
-    mail: leopardpan@icloud.com
+    mail: datouor@outlook.com
 
 # 百度统计 
 # 使用博客模板请去掉或者更换 id 
-baidu:
-    id: 8ba1c6be0953b6f9c2ba38e57f615421  
+#baidu:
+#    id:   
 
 # Google Analytics
 # 使用博客模板请去掉或者更换 id
