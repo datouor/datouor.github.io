@@ -46,17 +46,17 @@ wget -c http://soft.vpser.net/lnmp/lnmp1.4.tar.gz && tar zxf lnmp1.4.tar.gz && c
 ### 四，完成
 　　在执行过程中以root权限进行，必要时设置777权限。
 　　
-  　　
+<br/> </br>
+<br/> </br>   
+<br/> </br>
+<br/> </br>
+<br/> </br>
+<br/> </br>
+<br/> </br>
+<br/> </br>
+<br/> </br>
+<br/> </br>
     　　
-      　　
-        　　
-          　　
-            　　
-              　　
-                　　
-                  　　
-
-
 
 
 # 二搭建shadowsocks服务端实现网络代理
