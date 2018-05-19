@@ -44,20 +44,15 @@ wget -c http://soft.vpser.net/lnmp/lnmp1.4.tar.gz && tar zxf lnmp1.4.tar.gz && c
 　　在实际执行中，好像无法删除，则重命名即可。
 
 ### 四，完成
-　　在执行过程中以root权限进行，必要时设置777权限。
+　　在执行过程中以root权限进行，必要时设置777权限。  
+  
+ <br/> </br> 
+2018.2.19
 　　
 <br/> </br>
 <br/> </br>   
 <br/> </br>
 <br/> </br>
-<br/> </br>
-<br/> </br>
-<br/> </br>
-<br/> </br>
-<br/> </br>
-<br/> </br>
-    　　
-
 
 # 二搭建shadowsocks服务端实现网络代理
 
@@ -112,7 +107,10 @@ pip install shadowsocks
    
   若想让ss一直在后台运行，可运行：
   
-    `nohup ssserver -c /etc/shadowsocks.json > /dev/null 2>&1 &`
+    `nohup ssserver -c /etc/shadowsocks.json > /dev/null 2>&1 &`  
+      
+2018.5.19  
+<br/> </br>
 
     
  
