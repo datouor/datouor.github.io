@@ -12,7 +12,7 @@ tag: 树莓派
    
 　　目前AGV是另一个小组在做，但是板子很多，所以我也拿了一块，闲暇时调戏一下。目前仅是拿来个人娱乐，所以目的性会比较强，等后面再系统地学习吧。
    
-# 一  搭建可道云储存平台
+# 一 、搭建可道云储存平台
 
 背景：经常有上机实验需要拷贝一些文件，U盘携带不便，就想拿树莓派作为服务器搭建一个个人云，利用学校的局域网进行文件管理，局域网内网速也特别快。
 
@@ -46,14 +46,14 @@ wget -c http://soft.vpser.net/lnmp/lnmp1.4.tar.gz && tar zxf lnmp1.4.tar.gz && c
 ### 四， 完成
 　　在执行过程中以root权限进行，必要时设置777权限。  
   
-2018.2.19
+2018.5.19 &ensp datouor
 　　
 <br/> 
 <br/>    
 <br/> 
 <br/> 
 
-#  二搭建shadowsocks服务端实现网络代理
+#  二、搭建shadowsocks服务端实现网络代理
 
 背景：不告诉你
 
@@ -102,15 +102,63 @@ pip install shadowsocks
 
 ### 4. 启动ss服务
 
-   ` ssserver -c /etc/shadowsocks.json`
+` ssserver -c /etc/shadowsocks.json `
    
   若想让ss一直在后台运行，可运行：
   
-    `nohup ssserver -c /etc/shadowsocks.json > /dev/null 2>&1 &`  
+` nohup ssserver -c /etc/shadowsocks.json > /dev/null 2>&1 & `  
       
-2018.5.19  
+2018.5.19 &ensp datouor
+<br/> 
+<br/> 
+<br/> 
+<br/> 
+<br/> 
+# 三、树莓派延时摄影及图片转视频
+
+背景：为了好玩啊  
+参考：[libav](https://www.libav.org/)、[avconv](https://libav.org/avconv.html)、[科技小制作](https://www.bilibili.com/video/av12228607?from=search&seid=11194749709553435313)  
+  
+### 获取图片  
+使用树莓派自带命令raspistill拍摄照片
+``` 
+raspistill -w 1920 -h 1080 -q 100 -t 172800000 -tl 600000 -o /home/wwwroot/default/data/User/admin/home/pictures/time%07d.jpg
+```  
+
+```
+参数说明：
+指定宽为-w1920 高为-h1080
+图片质量-q为100（最高）
+-t 延时时间（单位 毫秒）
+-tl 拍摄间隔
+-o 拍摄文件储存路径，我是直接放到了可道云的目录下面，便于管理
+time%07d.jpg： 文件名以time+7位整数命名
+```  
+
+### 将图片转换为视频  
+
+安装图片转视频软件
+
+' sudo apt-get install libav-tools '
+    
+进入图片存放目录
+
+'cd home/wwwroot/default/data/User/admin/home/pictures/ '
+
+将图片转换为视频
+
+' avconv -r 10 -i time&07d.jpg -r 10 -vcodec libx264 -crf 20 -g 15 time.mp4 '
+
+```
+参数说名：  
+-r 10：设置视频帧率为10
+```
+未完待续。。。
+2018.5.19 &ensp datouor
+<br/> 
+<br/> 
+<br/> 
+<br/> 
 <br/> 
 
-    
- 
 　　
