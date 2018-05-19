@@ -45,7 +45,16 @@ wget -c http://soft.vpser.net/lnmp/lnmp1.4.tar.gz && tar zxf lnmp1.4.tar.gz && c
 
 ### 四，完成
 　　在执行过程中以root权限进行，必要时设置777权限。
-
+　　
+  　　
+    　　
+      　　
+        　　
+          　　
+            　　
+              　　
+                　　
+                  　　
 
 
 
