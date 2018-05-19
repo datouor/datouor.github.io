@@ -12,7 +12,7 @@ tag: 树莓派
    
 　　目前AGV是另一个小组在做，但是板子很多，所以我也拿了一块，闲暇时调戏一下。目前仅是拿来个人娱乐，所以目的性会比较强，等后面再系统地学习吧。
    
-# 一 搭建可道云储存平台
+# 一  搭建可道云储存平台
 
 背景：经常有上机实验需要拷贝一些文件，U盘携带不便，就想拿树莓派作为服务器搭建一个个人云，利用学校的局域网进行文件管理，局域网内网速也特别快。
 
@@ -27,7 +27,7 @@ wget -c http://soft.vpser.net/lnmp/lnmp1.4.tar.gz && tar zxf lnmp1.4.tar.gz && c
 ~~~
 完成后，在浏览器输入树莓派ip会出现lnmp默认页
 
-### 二，下载并安装可道云
+### 二， 下载并安装可道云
 
 下载可道云(版本号可自定义)
 
@@ -39,35 +39,34 @@ wget -c http://soft.vpser.net/lnmp/lnmp1.4.tar.gz && tar zxf lnmp1.4.tar.gz && c
 
 此时，在浏览器输入`树莓派ip//index.php`可以进入可道云登陆页面
 
-### 三，删除index.html文件
+### 三， 删除index.html文件
 
 　　在实际执行中，好像无法删除，则重命名即可。
 
-### 四，完成
+### 四， 完成
 　　在执行过程中以root权限进行，必要时设置777权限。  
   
- <br/> </br> 
 2018.2.19
 　　
-<br/> </br>
-<br/> </br>   
-<br/> </br>
-<br/> </br>
+<br/> 
+<br/>    
+<br/> 
+<br/> 
 
-# 二搭建shadowsocks服务端实现网络代理
+#  二搭建shadowsocks服务端实现网络代理
 
 背景：不告诉你
 
-### 1.安装pip
+### 1. 安装pip
 ~~~
 apt-get install python-pip python-gevent python-m2crypto
 //感觉这类工具型软件的安装应该单独拉出来的，以后再弄吧
 ~~~
-### 2.安装shadow socks
+### 2. 安装shadow socks
 ~~~
 pip install shadowsocks
 ~~~
-### 3.在/etc目录下创建配置文件
+### 3. 在/etc目录下创建配置文件
 
 通过vim创建该配置  [vim文本编辑器常用指令介绍](https://baike.baidu.com/item/Vim/60410)
 
@@ -101,7 +100,7 @@ pip install shadowsocks
 `编辑完成，点击Esc键返回命令模式，输入’:wq’保存并退出`
 
 
-### 4.启动ss服务
+### 4. 启动ss服务
 
    ` ssserver -c /etc/shadowsocks.json`
    
@@ -110,7 +109,7 @@ pip install shadowsocks
     `nohup ssserver -c /etc/shadowsocks.json > /dev/null 2>&1 &`  
       
 2018.5.19  
-<br/> </br>
+<br/> 
 
     
  
