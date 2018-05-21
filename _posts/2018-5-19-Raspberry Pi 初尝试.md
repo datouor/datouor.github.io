@@ -139,15 +139,21 @@ time%07d.jpg： 文件名以time+7位整数命名
 
 安装图片转视频软件
 
-' sudo apt-get install libav-tools '
+```
+sudo apt-get install libav-tools
+```
     
 进入图片存放目录
 
-'cd home/wwwroot/default/data/User/admin/home/pictures/ '
+```
+cd home/wwwroot/default/data/User/admin/home/pictures/
+```  
 
 将图片转换为视频
 
-' avconv -r 10 -i time&07d.jpg -r 10 -vcodec libx264 -crf 20 -g 15 time.mp4 '
+```
+avconv -r 10 -i time&07d.jpg -r 10 -vcodec libx264 -crf 20 -g 15 time.mp4
+```
 
 ```
 参数说名：  
